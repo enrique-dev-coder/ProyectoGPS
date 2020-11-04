@@ -1,0 +1,39 @@
+#mio {
+    font-size: 40px;
+    font-family: 'Prompt', sans-serif, serif;
+}
+#op{
+    opacity: .5;
+    filter:  alpha(opacity=50);
+}
+
+#logo-container {
+
+    width: 280px; 
+    height: 100%;
+    margin-top: 5PX;
+
+}
+
+
+nav ul a {
+ color:    #054e92 ;
+ font-weight: bold;
+}
+
+.light{
+    font-weight: 600;
+}
+
+
+@media (max-width: 475px) {
+  
+    #logo-container{
+
+        margin-top: 0px; 
+        height:100% ;
+        width: 300px;
+    }
+    
+    
+}

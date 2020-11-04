@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="stylesheet" href="output.css">
+    <title>GPSTotal Proyectos</title>
+</head>
+
+<body>
+    <nav class="indigo accent-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo">
+              <img class="responsive-img"  src="logo_web_lg.png" alt="logo">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#">Cotizaciones</a>
+                </li>
+                <li>
+                    <a href="#">Planos</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+
+                <li>
+                    <a href="#">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#">Cotizaciones</a>
+                </li>
+                <li>
+                    <a href="#">Planos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+
+        </div>
+       
+    </nav>
+    
+    <div class="container">
+        <h1 class="header center grey-text text-darken-3">Nuestra experiencia profesional</h1>
+
+    </div>
+
+
+    <div class="container">
+        <div class="carousel carousel-slider center " data-indicators="true">
+          <div class="carousel-fixed-item center middle-indicator">
+           <div class="left">
+            <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+           </div>
+           
+           <div class="right">
+           <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+           </div>
+          </div>
+          <div class="carousel-item  white-text proyecto1" href="#one!">
+            
+            <div class="cardpanelposition">
+
+              <div class="card-panel teal lighten-3 ">
+              
+                <p class="flow-text">Localizacion de ductos con equipo GPS de alta precision</p>
+              
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item  proyecto2" href="#two!">
+            <div class="cardpanelposition">
+
+              <div class="card-panel teal lighten-3 ">
+              
+                <p class="flow-text">Localizacion de ductos en Peru mediante GPS</p>
+              
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item  proyecto3" href="#three!">
+            <div class="cardpanelposition">
+
+              <div class="card-panel teal lighten-3">
+              
+                <p class="flow-text">Participacion en obra civil como puentes,carreteras,naves inustriales</p>
+              
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item proyecto4" href="#four!">
+            <div class="cardpanelposition">
+
+              <div class="card-panel teal lighten-3 ">
+              
+                <p class="flow-text">Trazo de puntos para líneas eléctricas</p>
+              
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      
+      </div>
+
+
+   
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+       
+      // start carrousel
+      $('.carousel.carousel-slider').carousel({
+         fullWidth: true,
+         indicators: false
+      });
+   
+   
+      // move next carousel
+      $('.moveNextCarousel').click(function(e){
+         e.preventDefault();
+         e.stopPropagation();
+         $('.carousel').carousel('next');
+      });
+   
+      // move prev carousel
+      $('.movePrevCarousel').click(function(e){
+         e.preventDefault();
+         e.stopPropagation();
+         $('.carousel').carousel('prev');
+      });
+
+
+   </script>
+
+
+</body>
+</html>
