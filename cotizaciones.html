@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>GPS Total</title>
+  </head>
+
+  <body>
+    <nav class="indigo accent-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo">
+          <img class="responsive-img" src="logo_web_lg.png" alt="logo" />
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="proyectos.html">Proyectos</a>
+          </li>
+          <li>
+            <a href="cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="#">Planos</a>
+          </li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li>
+            <a href="proyectos.html">Proyectos</a>
+          </li>
+          <li>
+            <a href="cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li>
+            <a href="#">Planos</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h1>Cotizaciones</h1>
+          <p>
+            Realiza tu cotizacion aqui, solo llena los campos requeridos y nos
+            comunicaremos contigo
+            <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input  id="first_name" type="text" class="validate">
+                    <label for="first_name">Nombre</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input type="text" placeholder="Fecha" class="datepicker">
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s6">
+                    Escribe tu email:
+                    <div class="input-field inline">
+                      <input id="email_inline" type="email" class="validate">
+                      <label for="email_inline">Email</label>
+                      <span class="helper-text" data-error="wrong" data-success="right">Te enviaremos tu cotizacion</span>
+                    </div>
+                  </div>
+                  <div class= "col s6">
+                    <select id="locality-dropdown"  class="browser-default" name="locality">
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <label>Selecciona la ciudad de tu proyecto</label>
+                  </div>
+                </div>
+              </form>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <!--El script en Jquery para que jale la nav bar-->
+
+    <script>
+      
+      $(document).ready(function(){
+        $('select').formSelect();
+      });
+    </script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".parallax").parallax();
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(".material-icons").ready(function () {
+        $(".sidenav").sidenav();
+      });
+
+    </script>
+    <script>
+
+        $(document).ready(function(){
+            $('.datepicker').datepicker();
+                });
+    </script>
+
+    <script>
+          $(document).ready(function() {
+            M.updateTextFields();
+            });
+    </script>
+    <script src="./cotizaciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
