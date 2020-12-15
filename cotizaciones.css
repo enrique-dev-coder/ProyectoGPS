@@ -1,0 +1,22 @@
+#listaEstados {
+  margin-top: 20px;
+  border-bottom: solid lightseagreen;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#locality-dropdown {
+  margin-top: 20px;
+  border-bottom: solid lightseagreen;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#phone {
+  margin-top: 14px;
+}
+
+#button-position {
+  margin-top: 15px;
+}

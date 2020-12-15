@@ -1,39 +1,75 @@
-#mio {
-    font-size: 40px;
-    font-family: 'Prompt', sans-serif, serif;
+@font-face {
+  font-family: Colus;
+  src: url("./fonts/Colus-Regular.eot");
+  src: url("./fonts/Colus-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Colus-Regular.woff2") format("woff2"),
+    url("./fonts/Colus-Regular.woff") format("woff"),
+    url("./fonts/Colus-Regular.ttf") format("truetype");
 }
-#op{
-    opacity: .5;
-    filter:  alpha(opacity=50);
+
+#mio {
+  font-size: 50px;
+  font-family: "Colus", Helvetica, Arial, sans-serif;
+}
+#op {
+  opacity: 0.2;
+  filter: alpha(opacity=50);
 }
 
 #logo-container {
-
-    width: 280px; 
-    height: 100%;
-    margin-top: 5PX;
-
+  width: 280px;
+  height: 100%;
+  margin-top: 5px;
 }
 
+nav {
+  height: 85px;
+}
 
 nav ul a {
- color:    #054e92 ;
- font-weight: bold;
+  color: #054e92;
+  font-weight: bold;
 }
 
-.light{
-    font-weight: 600;
+.light {
+  font-weight: 600;
 }
-
 
 @media (max-width: 475px) {
-  
-    #logo-container{
+  #logo-container {
+    margin-top: 0px;
+    height: 100%;
+    width: 300px;
+  }
+}
 
-        margin-top: 0px; 
-        height:100% ;
-        width: 300px;
-    }
-    
-    
+@media (max-width: 320px) {
+  #mio {
+    font-size: 30px;
+    font-family: "Colus", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-device-width: 321px) and (max-device-width: 475px) {
+  #mio {
+    font-size: 35px;
+    font-family: "Colus", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #mio {
+    font-size: 55px;
+    font-family: "Colus", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 3000px) {
+  #mio {
+    font-size: 65px;
+    font-family: "Colus", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
 }
